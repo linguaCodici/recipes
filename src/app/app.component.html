@@ -1,12 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="jumbotron justify-content-center">
-  <h1 class="display-4">Recipes</h1>
+  <h1 class="display-4 pl-5">Recipes</h1>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-6">
-      <h4 class="pb-5">Portuguese Tarlet Recipe</h4>
-
+    <button class="btn btn-block" (click)="hidden=!hidden"> 
+      <h4 class="pb-5">Portuguese Tartlet Recipe</h4>
+    </button>
+    <div class="col-6" [ngStyle]="{'display': hidden ? 'none' : 'inline'}">
       <h6>Ingredients</h6>
       <ol>
           <li>Sugar Syrup</li>
